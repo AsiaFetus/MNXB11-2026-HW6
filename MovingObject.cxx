@@ -1,4 +1,5 @@
 #include "MovingObject.h"
+#include<cmath>
 
 ClassImp(MovingObject);
 
@@ -21,11 +22,11 @@ Double_t MovingObject::Vz() const {
 }
 
 Double_t MovingObject::Speed() const {
-    return 0.0;
+    return std::sqrt(fVx * fVx + fVy * fVy + fVz * fVz);
 }
 
 Double_t MovingObject::HorizontalSpeed() const {
-    return 0.0;
+    return std::sqrt(fVx * fVx + fVy * fVy);
 }
 
 void MovingObject::SetVelocity(Double_t vx, Double_t vy, Double_t vz) {

@@ -1,0 +1,10 @@
+1.
+	Default access rules of class, members are private by default, for struct, members are public by default. 
+2.
+	We derive from TObject to allow our class to act as an predefined object allowing us to utilize root containers and methods
+5.
+	Changing v_z changes total speed but leaves horizontal speed unchanged simply because v_z is not a component of horizontal speed, its only components are v_x and v_y. 
+6.
+	Entry Count = 10000	
+	SetSeed = 12345
+	Generation parameters = Gaus(0.0, 0.30) for all 3 components
