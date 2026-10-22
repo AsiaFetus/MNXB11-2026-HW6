@@ -8,3 +8,12 @@
 	Entry Count = 10000	
 	SetSeed = 12345
 	Generation parameters = Gaus(0.0, 0.30) for all 3 components
+
+
+Running Macros
+
+root [] .L MovingObject.cxx+
+root [] .x write.C
+
+root [] .L MovingObject.cxx+
+root [] .x read.C
